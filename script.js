@@ -4,9 +4,12 @@ const redirectUri = 'https://def4ult0.github.io/spotify-stats/';
 const scopes = 'user-top-read';
 
 document.getElementById('login').onclick = () => {
-  const authUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${scopes}`;
-  window.location.href = authUrl;
-};
+  const authUrl = `https://accounts.spotify.com/authorize` +
+  `?client_id=${clientId}` +
+  `&response_type=token` +
+  `&redirect_uri=${encodeURIComponent(redirectUri)}` +
+  `&scope=${encodeURIComponent(scopes)}`;
+
 
 window.onload = () => {
   const hash = window.location.hash;
