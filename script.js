@@ -1,5 +1,5 @@
 const clientId = '2589e03cce51453b9dcb56e7e8f5ef5e';
-const redirectUri = 'https://def4ult0.github.io/spotify-stats
+const redirectUri = 'https://def4ult0.github.io/spotify-stats/
 ';
 const scopes = 'user-top-read';
 
